@@ -119,22 +119,19 @@
     <div class="grid-layout">
         <div>
             <span class="section-title">Ecosistema End-to-End (Click para expandir)</span>
-            
-            <details>
+                        <details>
                 <summary>📊 Statistics & Financial Reporting: Oracle + SAP</summary>
                 <div class="details-content">
                     Integración de datos y etls. Desarrollo y Monitoreo de dashboards para Control de Pagos, Correcciones Monetarias y Facturación mensual. Apoyo a equipos de Finanzas y Contabilidad.
             
                 </div>
             </details>
-
             <details>
                 <summary>🐍 Advanced Analytics: Python+Power BI+Tableau+Looker</summary>
                 <div class="details-content">
                     Desarrollo y aplicación de modelos estadísticos, automatización de ingesta de datos. Visualizaciones de alto impacto para toma de decisiones en tiempo real. 
                 </div>
             </details>
-
             <details>
                 <summary>🌐 Conectividad: Datos APIs</summary>
                 <div class="details-content">
@@ -151,7 +148,11 @@
             <span class="section-title" style="margin-top: 25px;">Experiencia Laboral</span>
             <div class="job-item">
                 <strong>Grupo Nuestros Parques</strong> | 2023 - 2025<br>
-                <small>BP Analytics y Tableau administrator para: Gerencia TI, Gerencia Finanzas y Gerencia Comercial. Recaudación de Pagos, Correción Monetaria, control de tablas bseg y bkpf en SAP. Governanza de datos, administración de tableros y apoyo en soluciones estadísticas. </small>
+                <small>BP Analytics y Tableau administrator: Gerencia TI, Gerencia Finanzas y Gerencia Comercial. Recaudación de Pagos, Correción Monetaria, control de tablas BSEG y BKPF en SAP. Governanza de datos, administración de tableros y apoyo en soluciones estadísticas. </small>
+            </div>
+            <div class="job-item">
+                <strong>Microsystem</strong> | 2023 - 2023<br>
+                <small>Consultor BI. Soluciones analíticas en Tableau. Cliente: Grupo Nuestros Parques. Estado 360.</small>
             </div>
             <div class="job-item">
                 <strong>Deloitte</strong> | 2020 - 2023<br>
@@ -159,24 +160,23 @@
             </div>
             <div class="job-item">
                 <strong>Tsoft</strong> | 2016 - 2020<br>
-                <small>Consultor BI y Tableau Evangelist certificado, apoyo en soluciones visuales, conectividad y limpieza de datos para grandes clientes.</small>
+                <small>Consultor BI y Tableau certificado, apoyo en soluciones big data, conectividad, limpieza de datos y analítica avanzada para grandes clientes. Banco Santander, Bandera 260.</small>
             </div>
             <div class="job-item">
                 <strong>TATA Consultancy</strong> | 2013 - 2015<br>
-                <small>Analista BI para proyecto Nueva Teletón de Banco de Chile. Estado 260.</small>
+                <small>Analista BI, creación de Tableros para control y recaudación de pagos. Proyecto Nueva Teletón. Banco de Chile. Paseo Estado 260.</small>
             </div>
             <div class="job-item">
                 <strong>Citibank, Venezuela</strong> | 2010 - 2013<br>
-                <small>Intern y MIS Officer Junior para Retail Consumer Banking Latam.</small>
+                <small>Inicié como Intern, luego MIS Officer para Retail Consumer Banking Latam. Reportería y automatizacón de procesos, control de campañas, etc.</small>
             </div>
         </div>
 
         <div>
             <span class="section-title">Technical Proficiency</span>
             <div class="chart-container">
-                <canvas id="skillsChart"></canvas>
+            <canvas id="skillsChart"></canvas>
             </div>
-
             <span class="section-title" style="margin-top: 25px;">Certificaciones y Cursos Relevantes</span>
             <ul style="font-size: 0.85em; padding-left: 20px;">
                 <li>Python Advanced.</li>
@@ -185,13 +185,18 @@
                 <li>Data Ingestion with Python.</li>
                 <li>SAS Enterprise Guide.</li>
                 <li>Inglés como segunda lengua.</li>
-                <li>Contabilidad General y Superior.</li>
                 <li>-----------------------------------------------------</li>
                 <li>Tableau Certified Data Analyst.</li>
                 <li>Tableau Certified Desktop Specialist.</li>
                 <li>Tableau Bootcamp, Argentina.</li>
-                <li>Tableau Early Bird.</li>
-
+            </ul>
+            <span class="section-title" style="margin-top: 25px;">Actividades y Tiempo Libre</span>
+            <ul style="font-size: 0.85em; padding-left: 20px;">
+                <li>Ejercicios, Yoga, Pilates.</li>
+                <li>Estudiar nuevas tecnologías.</li>
+                <li>Clases de Tableau y Power BI.</li>
+                <li>Clases de Analítica de datos.</li>
+                <li>Clases de Algoritmo y Programación.</li>
             </ul>
         </div>
     </div>
@@ -200,8 +205,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const canvas = document.getElementById('skillsChart');
-        const ctx = canvas.getContext('2d');
-        
+        const ctx = canvas.getContext('2d');  
         new Chart(ctx, {
             type: 'bar',
             data: {
@@ -230,7 +234,7 @@
                     x: { 
                         min: 0,        
                         max: 100,      
-                        ticks: { stepSize: 20 }
+                        ticks: { stepSize: 10 }
                     },
                     y: { grid: { display: false } }
                 }
